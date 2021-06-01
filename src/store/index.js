@@ -15,7 +15,10 @@ createSlice({
             state.counter--;
         },
         increase(state, action) {
-            state.counter = state.counter + action.amount
+            state.counter = state.counter + action.amount;
+        },
+        toggleCounter() {
+            state.showCounter = !state.showCounter;
         }
     }
 })
